@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.10">
+	<Item id="cbd4f66a-5fc7-4dd1-8ba8-88416f72d6c0">
+		<Name>Биткоин</Name>
+		<Code>000000001</Code>
+		<Description>Биткоин</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="7de65561-9c94-43a1-85b8-9cc0dd6119d8">
+		<Name>Бузкоин</Name>
+		<Code>000000002</Code>
+		<Description>Бузкоин</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+</PredefinedData>
