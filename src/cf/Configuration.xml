@@ -203,6 +203,7 @@
 			<Catalog>КонтактныеЛицаКонтрагентов</Catalog>
 			<Catalog>ВнутренниеДокументы</Catalog>
 			<Catalog>Файлы</Catalog>
+			<Catalog>ВидыДокументов</Catalog>
 		</ChildObjects>
 	</Configuration>
 </MetaDataObject>
