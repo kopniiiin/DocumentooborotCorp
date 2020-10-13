@@ -19,8 +19,13 @@
 		<InputField name="Роль" id="10">
 			<DataPath>Объект.Роль</DataPath>
 			<EditMode>EnterOnInput</EditMode>
+			<ChoiceButton>true</ChoiceButton>
 			<ContextMenu name="РольКонтекстноеМеню" id="11"/>
 			<ExtendedTooltip name="РольРасширеннаяПодсказка" id="12"/>
+			<Events>
+				<Event name="StartChoice">РольНачалоВыбора</Event>
+				<Event name="ChoiceProcessing">РольОбработкаВыбора</Event>
+			</Events>
 		</InputField>
 	</ChildItems>
 	<Attributes>
