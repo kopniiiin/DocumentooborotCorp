@@ -1,26 +1,26 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.10">
-	<Catalog uuid="8b61e4f4-adf9-4f1e-bd1a-52db73348b61">
+	<Catalog uuid="78ef4f66-95ea-4f2d-98ce-95d35f054030">
 		<InternalInfo>
 			<xr:GeneratedType name="CatalogObject.Пользователи" category="Object">
-				<xr:TypeId>d459b23a-d759-403f-b9e9-bdf28de85580</xr:TypeId>
-				<xr:ValueId>67fb3977-72c9-4635-bbcb-b05f7efa9e3f</xr:ValueId>
+				<xr:TypeId>ed4dbf8a-d9fe-4d9a-a5d9-a91022085a42</xr:TypeId>
+				<xr:ValueId>f92af7b5-5483-4a44-87f4-665fbfc5098a</xr:ValueId>
 			</xr:GeneratedType>
 			<xr:GeneratedType name="CatalogRef.Пользователи" category="Ref">
-				<xr:TypeId>04ecc656-1b9d-4bce-9f79-8bc3fd5f220c</xr:TypeId>
-				<xr:ValueId>549fa738-8648-4299-ae5d-1636bc049f7a</xr:ValueId>
+				<xr:TypeId>6137ddee-3ba5-4581-85f3-b4d485f94814</xr:TypeId>
+				<xr:ValueId>6b85ef23-b3d9-4e24-af23-f64755cb5ae5</xr:ValueId>
 			</xr:GeneratedType>
 			<xr:GeneratedType name="CatalogSelection.Пользователи" category="Selection">
-				<xr:TypeId>620c111e-6022-4fe0-a00a-0939af79d9b2</xr:TypeId>
-				<xr:ValueId>c2f5ce02-d6e9-40b4-a366-cae97e5da584</xr:ValueId>
+				<xr:TypeId>f3ac2de6-b6b7-49cb-b2eb-8892226c4b04</xr:TypeId>
+				<xr:ValueId>82ca1bc6-e14d-4e0d-ac84-2239b64f841c</xr:ValueId>
 			</xr:GeneratedType>
 			<xr:GeneratedType name="CatalogList.Пользователи" category="List">
-				<xr:TypeId>e2f205f5-4089-4863-a5c5-d66b66a2cf6e</xr:TypeId>
-				<xr:ValueId>bd39a149-df0e-40a3-8c18-08dd10b5f93d</xr:ValueId>
+				<xr:TypeId>1217de9b-ba21-40d9-8226-af24f2052d4c</xr:TypeId>
+				<xr:ValueId>6e7b6149-2313-45a8-9b15-6347015dcbf5</xr:ValueId>
 			</xr:GeneratedType>
 			<xr:GeneratedType name="CatalogManager.Пользователи" category="Manager">
-				<xr:TypeId>dbc7c2a5-ecf9-4e84-976a-a80028c644e8</xr:TypeId>
-				<xr:ValueId>675ecda8-6698-45a9-aaa9-55701af615c1</xr:ValueId>
+				<xr:TypeId>eec6eac8-02ca-4dc6-a4eb-ec331e066116</xr:TypeId>
+				<xr:ValueId>6a79205c-3ec3-41df-980b-49fcb328c602</xr:ValueId>
 			</xr:GeneratedType>
 		</InternalInfo>
 		<Properties>
@@ -87,51 +87,7 @@
 			<ExecuteAfterWriteDataHistoryVersionProcessing>false</ExecuteAfterWriteDataHistoryVersionProcessing>
 		</Properties>
 		<ChildObjects>
-			<Attribute uuid="d33eb19c-6a30-4636-8e33-ac6782bae390">
-				<Properties>
-					<Name>Идентификатор</Name>
-					<Synonym>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Идентификатор</v8:content>
-						</v8:item>
-					</Synonym>
-					<Comment/>
-					<Type>
-						<v8:Type>xs:string</v8:Type>
-						<v8:StringQualifiers>
-							<v8:Length>10</v8:Length>
-							<v8:AllowedLength>Variable</v8:AllowedLength>
-						</v8:StringQualifiers>
-					</Type>
-					<PasswordMode>false</PasswordMode>
-					<Format/>
-					<EditFormat/>
-					<ToolTip/>
-					<MarkNegatives>false</MarkNegatives>
-					<Mask/>
-					<MultiLine>false</MultiLine>
-					<ExtendedEdit>false</ExtendedEdit>
-					<MinValue xsi:nil="true"/>
-					<MaxValue xsi:nil="true"/>
-					<FillFromFillingValue>false</FillFromFillingValue>
-					<FillValue xsi:type="xs:string"/>
-					<FillChecking>DontCheck</FillChecking>
-					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
-					<ChoiceParameterLinks/>
-					<ChoiceParameters/>
-					<QuickChoice>Auto</QuickChoice>
-					<CreateOnInput>Auto</CreateOnInput>
-					<ChoiceForm/>
-					<LinkByType/>
-					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
-					<Use>ForItem</Use>
-					<Indexing>DontIndex</Indexing>
-					<FullTextSearch>Use</FullTextSearch>
-					<DataHistory>Use</DataHistory>
-				</Properties>
-			</Attribute>
-			<Attribute uuid="0d324c3d-e549-449a-a4f3-5737f7dcb657">
+			<Attribute uuid="f505bfe9-7f3e-4401-b823-5ebb28910539">
 				<Properties>
 					<Name>Роль</Name>
 					<Synonym>
@@ -144,7 +100,7 @@
 					<Type>
 						<v8:Type>xs:string</v8:Type>
 						<v8:StringQualifiers>
-							<v8:Length>20</v8:Length>
+							<v8:Length>25</v8:Length>
 							<v8:AllowedLength>Variable</v8:AllowedLength>
 						</v8:StringQualifiers>
 					</Type>
@@ -159,7 +115,7 @@
 					<MinValue xsi:nil="true"/>
 					<MaxValue xsi:nil="true"/>
 					<FillFromFillingValue>false</FillFromFillingValue>
-					<FillValue xsi:type="xs:string"/>
+					<FillValue xsi:nil="true"/>
 					<FillChecking>DontCheck</FillChecking>
 					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
 					<ChoiceParameterLinks/>

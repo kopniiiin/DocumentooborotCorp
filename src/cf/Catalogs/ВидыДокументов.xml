@@ -1,26 +1,26 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.10">
-	<Catalog uuid="074437f8-b1b5-4b38-8a6d-7603c4827b9a">
+	<Catalog uuid="b4f0c096-0297-4648-b3d1-1c03817cff05">
 		<InternalInfo>
 			<xr:GeneratedType name="CatalogObject.ВидыДокументов" category="Object">
-				<xr:TypeId>46f677b0-35ba-4166-9192-cc436e4aa0d0</xr:TypeId>
-				<xr:ValueId>d2c217cd-d97e-4d30-953d-d1ecfe49742d</xr:ValueId>
+				<xr:TypeId>e876513f-da0e-48cc-8e08-18d8d14b0e74</xr:TypeId>
+				<xr:ValueId>39ca83c6-4441-4ccb-8153-151a1ecabdfc</xr:ValueId>
 			</xr:GeneratedType>
 			<xr:GeneratedType name="CatalogRef.ВидыДокументов" category="Ref">
-				<xr:TypeId>436eb465-7310-4f6b-b645-c242fd9f0378</xr:TypeId>
-				<xr:ValueId>1b711275-40aa-4e8e-b21b-2d029709a5bd</xr:ValueId>
+				<xr:TypeId>88a85cde-00b2-4d26-a7ae-bbcf60bd9af9</xr:TypeId>
+				<xr:ValueId>d5ceddad-bf97-494b-9894-558691a62d07</xr:ValueId>
 			</xr:GeneratedType>
 			<xr:GeneratedType name="CatalogSelection.ВидыДокументов" category="Selection">
-				<xr:TypeId>421cdb2f-19b4-4a22-9204-fb651a518159</xr:TypeId>
-				<xr:ValueId>8d899e5e-777b-48b1-8859-41b33a60c826</xr:ValueId>
+				<xr:TypeId>9875372e-09b8-4d55-8499-0cf4e10a5737</xr:TypeId>
+				<xr:ValueId>6e3d62fe-658e-420a-85ff-9b22e0ffcc10</xr:ValueId>
 			</xr:GeneratedType>
 			<xr:GeneratedType name="CatalogList.ВидыДокументов" category="List">
-				<xr:TypeId>82df3718-3ed6-4b97-8a54-2c2fa25af56b</xr:TypeId>
-				<xr:ValueId>b48b0844-906f-4f9f-9cf1-753b02fff9a2</xr:ValueId>
+				<xr:TypeId>56d2d905-6817-4839-ba95-e0ed506f1a9d</xr:TypeId>
+				<xr:ValueId>9d0a8bf1-624c-4d9f-8f0c-fb86135b6310</xr:ValueId>
 			</xr:GeneratedType>
 			<xr:GeneratedType name="CatalogManager.ВидыДокументов" category="Manager">
-				<xr:TypeId>ebb4a912-2a9f-4087-b67e-3c40d7ef03a2</xr:TypeId>
-				<xr:ValueId>8c23e716-e27e-4692-9642-638559d4606b</xr:ValueId>
+				<xr:TypeId>9d5560a7-c176-4ca9-96b9-e3ad835e572c</xr:TypeId>
+				<xr:ValueId>5a9d7751-a933-4f8f-83b8-be7851b8c7cc</xr:ValueId>
 			</xr:GeneratedType>
 		</InternalInfo>
 		<Properties>
@@ -87,15 +87,15 @@
 			<ExecuteAfterWriteDataHistoryVersionProcessing>false</ExecuteAfterWriteDataHistoryVersionProcessing>
 		</Properties>
 		<ChildObjects>
-			<TabularSection uuid="cf42357a-9732-4ce0-a9d9-3e6c3b25e96b">
+			<TabularSection uuid="4dad6f55-225e-4c16-95ae-1f4d57385bbf">
 				<InternalInfo>
 					<xr:GeneratedType name="CatalogTabularSection.ВидыДокументов.РабочаяГруппа" category="TabularSection">
-						<xr:TypeId>f3a038f0-1999-4615-937a-66266dc5a083</xr:TypeId>
-						<xr:ValueId>369c7f7d-d7b6-4ef3-a193-7f7c5113da79</xr:ValueId>
+						<xr:TypeId>9956955f-ed10-4d83-a2c1-095582cd96da</xr:TypeId>
+						<xr:ValueId>ba4e40f4-73a2-45e1-b904-22f2df211325</xr:ValueId>
 					</xr:GeneratedType>
 					<xr:GeneratedType name="CatalogTabularSectionRow.ВидыДокументов.РабочаяГруппа" category="TabularSectionRow">
-						<xr:TypeId>8214f089-eb2f-49b9-9b13-347e98733ffa</xr:TypeId>
-						<xr:ValueId>3c1eb311-1d9d-477b-bd69-dec268074f8a</xr:ValueId>
+						<xr:TypeId>ef9b490e-6aa3-486b-8867-0bf54237987a</xr:TypeId>
+						<xr:ValueId>34121dbd-550b-42dd-a391-27d42b63e2e5</xr:ValueId>
 					</xr:GeneratedType>
 				</InternalInfo>
 				<Properties>
@@ -112,7 +112,7 @@
 					<Use>ForItem</Use>
 				</Properties>
 				<ChildObjects>
-					<Attribute uuid="e88384c9-1ba3-4771-9e9c-219d7646c874">
+					<Attribute uuid="2eb049e6-4eb4-4fc3-b9d1-4d90691872ce">
 						<Properties>
 							<Name>Роль</Name>
 							<Synonym>

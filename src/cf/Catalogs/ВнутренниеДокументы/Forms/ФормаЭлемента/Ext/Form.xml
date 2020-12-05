@@ -3,6 +3,9 @@
 	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
 	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+	</Events>
 	<ChildItems>
 		<InputField name="Код" id="1">
 			<DataPath>Объект.Code</DataPath>
@@ -22,6 +25,16 @@
 			<ContextMenu name="АвторКонтекстноеМеню" id="8"/>
 			<ExtendedTooltip name="АвторРасширеннаяПодсказка" id="9"/>
 		</InputField>
+		<InputField name="Вид" id="22">
+			<DataPath>Объект.Вид</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ВидКонтекстноеМеню" id="23"/>
+			<ExtendedTooltip name="ВидРасширеннаяПодсказка" id="24"/>
+			<Events>
+				<Event name="OnChange">ВидПриИзменении</Event>
+				<Event name="ChoiceProcessing">ВидОбработкаВыбора</Event>
+			</Events>
+		</InputField>
 		<InputField name="Организация" id="10">
 			<DataPath>Объект.Организация</DataPath>
 			<EditMode>EnterOnInput</EditMode>
@@ -31,16 +44,25 @@
 		<InputField name="Контрагент" id="13">
 			<DataPath>Объект.Контрагент</DataPath>
 			<EditMode>EnterOnInput</EditMode>
-			<AutoMarkIncomplete>true</AutoMarkIncomplete>
+			<AutoMarkIncomplete>false</AutoMarkIncomplete>
 			<ContextMenu name="КонтрагентКонтекстноеМеню" id="14"/>
 			<ExtendedTooltip name="КонтрагентРасширеннаяПодсказка" id="15"/>
 		</InputField>
 		<InputField name="КонтактноеЛицо" id="16">
 			<DataPath>Объект.КонтактноеЛицо</DataPath>
 			<EditMode>EnterOnInput</EditMode>
-			<AutoMarkIncomplete>true</AutoMarkIncomplete>
+			<AutoMarkIncomplete>false</AutoMarkIncomplete>
 			<ContextMenu name="КонтактноеЛицоКонтекстноеМеню" id="17"/>
 			<ExtendedTooltip name="КонтактноеЛицоРасширеннаяПодсказка" id="18"/>
+		</InputField>
+		<InputField name="Согласован" id="44">
+			<DataPath>Объект.Согласован</DataPath>
+			<DropListButton>true</DropListButton>
+			<ContextMenu name="СогласованКонтекстноеМеню" id="45"/>
+			<ExtendedTooltip name="СогласованРасширеннаяПодсказка" id="46"/>
+			<Events>
+				<Event name="Opening">СогласованОткрытие</Event>
+			</Events>
 		</InputField>
 		<InputField name="Комментарий" id="19">
 			<DataPath>Объект.Комментарий</DataPath>
@@ -48,65 +70,52 @@
 			<ContextMenu name="КомментарийКонтекстноеМеню" id="20"/>
 			<ExtendedTooltip name="КомментарийРасширеннаяПодсказка" id="21"/>
 		</InputField>
-		<InputField name="Вид" id="22">
-			<DataPath>Объект.Вид</DataPath>
-			<EditMode>EnterOnInput</EditMode>
-			<ContextMenu name="ВидКонтекстноеМеню" id="23"/>
-			<ExtendedTooltip name="ВидРасширеннаяПодсказка" id="24"/>
-		</InputField>
-		<CheckBoxField name="Договор" id="25">
-			<DataPath>Объект.Договор</DataPath>
-			<EditMode>EnterOnInput</EditMode>
-			<CheckBoxType>Auto</CheckBoxType>
-			<ContextMenu name="ДоговорКонтекстноеМеню" id="26"/>
-			<ExtendedTooltip name="ДоговорРасширеннаяПодсказка" id="27"/>
-		</CheckBoxField>
-		<Table name="Предметы" id="28">
+		<Table name="Предметы" id="25">
 			<Representation>List</Representation>
 			<AutoInsertNewRow>true</AutoInsertNewRow>
 			<EnableStartDrag>true</EnableStartDrag>
 			<EnableDrag>true</EnableDrag>
 			<DataPath>Объект.Предметы</DataPath>
 			<RowFilter xsi:nil="true"/>
-			<ContextMenu name="ПредметыКонтекстноеМеню" id="29"/>
-			<AutoCommandBar name="ПредметыКоманднаяПанель" id="30"/>
-			<ExtendedTooltip name="ПредметыРасширеннаяПодсказка" id="31"/>
-			<SearchStringAddition name="ПредметыСтрокаПоиска" id="32">
+			<ContextMenu name="ПредметыКонтекстноеМеню" id="26"/>
+			<AutoCommandBar name="ПредметыКоманднаяПанель" id="27"/>
+			<ExtendedTooltip name="ПредметыРасширеннаяПодсказка" id="28"/>
+			<SearchStringAddition name="ПредметыСтрокаПоиска" id="29">
 				<AdditionSource>
 					<Item>Предметы</Item>
 					<Type>SearchStringRepresentation</Type>
 				</AdditionSource>
-				<ContextMenu name="ПредметыСтрокаПоискаКонтекстноеМеню" id="33"/>
-				<ExtendedTooltip name="ПредметыСтрокаПоискаРасширеннаяПодсказка" id="34"/>
+				<ContextMenu name="ПредметыСтрокаПоискаКонтекстноеМеню" id="30"/>
+				<ExtendedTooltip name="ПредметыСтрокаПоискаРасширеннаяПодсказка" id="31"/>
 			</SearchStringAddition>
-			<ViewStatusAddition name="ПредметыСостояниеПросмотра" id="35">
+			<ViewStatusAddition name="ПредметыСостояниеПросмотра" id="32">
 				<AdditionSource>
 					<Item>Предметы</Item>
 					<Type>ViewStatusRepresentation</Type>
 				</AdditionSource>
-				<ContextMenu name="ПредметыСостояниеПросмотраКонтекстноеМеню" id="36"/>
-				<ExtendedTooltip name="ПредметыСостояниеПросмотраРасширеннаяПодсказка" id="37"/>
+				<ContextMenu name="ПредметыСостояниеПросмотраКонтекстноеМеню" id="33"/>
+				<ExtendedTooltip name="ПредметыСостояниеПросмотраРасширеннаяПодсказка" id="34"/>
 			</ViewStatusAddition>
-			<SearchControlAddition name="ПредметыУправлениеПоиском" id="38">
+			<SearchControlAddition name="ПредметыУправлениеПоиском" id="35">
 				<AdditionSource>
 					<Item>Предметы</Item>
 					<Type>SearchControl</Type>
 				</AdditionSource>
-				<ContextMenu name="ПредметыУправлениеПоискомКонтекстноеМеню" id="39"/>
-				<ExtendedTooltip name="ПредметыУправлениеПоискомРасширеннаяПодсказка" id="40"/>
+				<ContextMenu name="ПредметыУправлениеПоискомКонтекстноеМеню" id="36"/>
+				<ExtendedTooltip name="ПредметыУправлениеПоискомРасширеннаяПодсказка" id="37"/>
 			</SearchControlAddition>
 			<ChildItems>
-				<LabelField name="ПредметыНомерСтроки" id="41">
+				<LabelField name="ПредметыНомерСтроки" id="38">
 					<DataPath>Объект.Предметы.LineNumber</DataPath>
 					<EditMode>EnterOnInput</EditMode>
-					<ContextMenu name="ПредметыНомерСтрокиКонтекстноеМеню" id="42"/>
-					<ExtendedTooltip name="ПредметыНомерСтрокиРасширеннаяПодсказка" id="43"/>
+					<ContextMenu name="ПредметыНомерСтрокиКонтекстноеМеню" id="39"/>
+					<ExtendedTooltip name="ПредметыНомерСтрокиРасширеннаяПодсказка" id="40"/>
 				</LabelField>
-				<InputField name="ПредметыПредмет" id="44">
+				<InputField name="ПредметыПредмет" id="41">
 					<DataPath>Объект.Предметы.Предмет</DataPath>
 					<EditMode>EnterOnInput</EditMode>
-					<ContextMenu name="ПредметыПредметКонтекстноеМеню" id="45"/>
-					<ExtendedTooltip name="ПредметыПредметРасширеннаяПодсказка" id="46"/>
+					<ContextMenu name="ПредметыПредметКонтекстноеМеню" id="42"/>
+					<ExtendedTooltip name="ПредметыПредметРасширеннаяПодсказка" id="43"/>
 				</InputField>
 			</ChildItems>
 		</Table>
