@@ -189,7 +189,7 @@
 		<ChildObjects>
 			<Language>Русский</Language>
 			<Subsystem>СправочникиИПВХ</Subsystem>
-			<Subsystem>Документы</Subsystem>
+			<Subsystem>ДокументыИЗадачи</Subsystem>
 			<Subsystem>Отчеты</Subsystem>
 			<Subsystem>РегистрыСведенийИНакопления</Subsystem>
 			<SessionParameter>ТекущийПользователь</SessionParameter>
@@ -204,7 +204,10 @@
 			<Role>СогласованиеДокументов</Role>
 			<CommonModule>ОбщийМодульСистема</CommonModule>
 			<CommonModule>ОбщийМодульПолнотекстовыйПоиск</CommonModule>
+			<CommonModule>Обмены</CommonModule>
 			<CommonAttribute>Разделитель</CommonAttribute>
+			<ExchangePlan>Риб</ExchangePlan>
+			<EventSubscription>ПриЗаписиСправочника</EventSubscription>
 			<ScheduledJob>ПолнотекстовыйПоиск</ScheduledJob>
 			<Catalog>Валюты</Catalog>
 			<Catalog>Организации</Catalog>
@@ -225,10 +228,13 @@
 			<Enum>СогласованнсотьДокументов</Enum>
 			<Report>ПланФактПроекта</Report>
 			<InformationRegister>ФИОФизическихЛиц</InformationRegister>
+			<InformationRegister>Адресация</InformationRegister>
 			<AccumulationRegister>ЗатратыПоПроектам</AccumulationRegister>
 			<AccumulationRegister>Доходы</AccumulationRegister>
 			<ChartOfCharacteristicTypes>СтатьиЗатратПоПроектам</ChartOfCharacteristicTypes>
 			<ChartOfCharacteristicTypes>Доходы</ChartOfCharacteristicTypes>
+			<BusinessProcess>Исполнение</BusinessProcess>
+			<Task>ЗадачаПользователя</Task>
 		</ChildObjects>
 	</Configuration>
 </MetaDataObject>
